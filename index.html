@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Interactive Website</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			/*background-image: url("https://images.unsplash.com/photo-1680763921539-afae7b2c219e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=900&q=60");*/
+			background-size: contain;
+            background-repeat: no-repeat;
+			background-position: center center;
+			background-attachment: fixed;
+			font-family: Arial, sans-serif;
+		}
+		
+		.container {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+		}
+		
+		.textbox {
+			padding: 10px;
+			border-radius: 5px;
+			border: none;
+			width: 400px;
+			margin-right: 20px;
+			font-size:40px;
+		}
+		
+		.submit {
+			padding: 10px 20px;
+			background-color: #2196F3;
+			border: none;
+			border-radius: 5px;
+			color: #fff;
+			cursor: pointer;
+			font-size: 40px;
+		}
+		
+		.canvas {
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: -1;
+			width: 100%;
+			height: 100%;
+            /*background-color: red;*/
+
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<input type="text" id="textbox" class="textbox" placeholder="Type something...">
+		<button id="submit" class="submit">Submit</button>
+	</div>
+	<canvas id="canvas" class="canvas"></canvas>
+
+	<script src="script.js"></script>
+</body>
+</html>
